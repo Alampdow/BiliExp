@@ -3,7 +3,7 @@ name: 'Run_Judgement'
 
 on:
   schedule:
-    - cron: '*/30 0-4,5-8,10-17 * * *'
+    - cron: '*/30 21-23,5-7,13-15 * * *'
   watch:
     types: started
   workflow_dispatch:
