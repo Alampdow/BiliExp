@@ -3,7 +3,7 @@ name: 'Run_Judgement'
 
 on:
   schedule:
-    - cron: '*/30 21-23,5-7,13-15 * * *'
+    - cron: '*/30 0-4,5-8,10-17 * * *'
   watch:
     types: started
   workflow_dispatch:
@@ -27,6 +27,6 @@ jobs:
     - name: Run_Judgement
       run: bash ./run_in_Actions/run_BiliExp.sh
       env:
-          ADVCONFIG: ${{ secrets.JUGCONFIG }}
+          ADVCONFIG: ${{ secrets.JUDCONFIG }}
           BILICONFIG: ${{ secrets.BILICONFIG }}
           PUSH_MESSAGE: ${{ secrets.PUSH_MESSAGE }}
